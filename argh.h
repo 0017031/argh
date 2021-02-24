@@ -178,7 +178,7 @@ namespace argh
       std::transform(argv, argv + argc, args_.begin(), [](const char* const arg) { return arg;  });
 
       // parse line
-      for (auto i = 0u; i < args_.size(); ++i)
+      for (size_t i = 0u; i < args_.size(); ++i)
       {
          if (!is_option(args_[i]))
          {
